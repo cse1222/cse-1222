@@ -28,8 +28,8 @@ using namespace std;
  */
 class Point {
     private:
-        double px;      // x-coordinate of (x,y) coordinate pair
-        double py;      // y-coordinate of (x,y) coordinate pair
+        double  px;     // x-coordinate of (x,y) coordinate pair
+        double  py;     // y-coordinate of (x,y) coordinate pair
 
     public:
         // Member functions
@@ -46,8 +46,8 @@ class Point {
  * 
  */
 Point::Point() {
-    px = 0;
-    py = 0;
+    px  = 0;
+    py  = 0;
 }
 
 /**
@@ -56,8 +56,8 @@ Point::Point() {
  */
 class Triangle {
     private:
-        Point blPoint;              // bottom left vertex (x,y) of a triangle
-        double length, height;      // length (along x-axis) and height (along y-axis) of a triangle
+        Point   blPoint;            // bottom left vertex (x,y) of a triangle
+        double  length, height;     // length (along x-axis) and height (along y-axis) of a triangle
 
     public:
         // Member functions
@@ -78,7 +78,7 @@ class Triangle {
         void scaleHeight(const double sy);
         void display() const;
 
-        Triangle();    // default constructor
+        Triangle();     // default constructor
 };
 
 /**
@@ -87,16 +87,16 @@ class Triangle {
  */
 Triangle::Triangle() {
     blPoint = Point();
-    length = 0;
-    height = 0;
+    length  = 0;
+    height  = 0;
 }
 
 /* FUNCTION PROTOTYPES */
 void read_triangle(Triangle &tri);
 
 int main() {
-    Triangle tri;       // triangle object containing characteristics of a triangle
-    double sx, sy;      // scale factors in x and y directions respectively
+    Triangle    tri;        // triangle object containing characteristics of a triangle
+    double      sx, sy;     // scale factors in x and y directions respectively
 
     /* Prompt the user for triangle information and fill Class Triangle object, tri */
     read_triangle(tri);
@@ -105,11 +105,8 @@ int main() {
     tri.display();
 
     /* Prompt and read scale factors to change length and height */
-    cout << "Enter scale factor in x direction: ";
-    cin >> sx;
-
-    cout << "Enter scale factor in y direction: ";
-    cin >> sy;
+    cout << "Enter scale factor in x direction: ", cin >> sx;
+    cout << "Enter scale factor in y direction: ", cin >> sy;
 
     /* Apply scale factors */
     tri.scaleLength(sx);
@@ -129,8 +126,8 @@ int main() {
  * @param tri The Triangle object containing the triangle characteristics
  */
 void read_triangle(Triangle &tri) {
-    double bl_x, bl_y;
-    double length, height;
+    double  bl_x, bl_y;
+    double  length, height;
 
     /* Prompt and read in triangle characteristics */
     cout << "Enter bottom left x coordinate: ", cin >> bl_x;

@@ -10,6 +10,7 @@
  * 
  */
 
+#define _USE_MATH_DEFINES
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -20,8 +21,8 @@ void compute_coord(double radius, double angle, double &x, double &y);
 
 // DO NOT MODIFY THE MAIN ROUTINE IN ANY WAY
 int main() {
-    double angle_degrees(0.0), angle_radians(0.0), radius(0.0);
-    double coord_x(0.0), coord_y(0.0);
+    double  angle_degrees(0.0), angle_radians(0.0), radius(0.0);
+    double  coord_x(0.0), coord_y(0.0);
 
     // Read polar coordinates
     cout << "Enter radius: ";
@@ -65,6 +66,6 @@ double degrees2radians(double angle) {
  * @param y The y-coordinate of the point.
  */
 void compute_coord(double radius, double angle, double &x, double &y) {
-    x = radius * cos(angle);
-    y = radius * sin(angle);
+    x   = radius * cos(angle);
+    y   = radius * sin(angle);
 }

@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------------------------
+Sample #1: 212 degrees F (or 100 degrees C) at 04:27
+Sample #2: 32.5 degrees F (or 0.277778 degrees C) at 00:01
+-------------------------------------------------------------------------------------------------
+The average temp is 122.25 degrees F
+The coldest temp is 32.5 degrees F
+The last sample was taken at time 04:27

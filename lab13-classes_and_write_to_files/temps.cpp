@@ -28,8 +28,8 @@ using namespace std;
  */
 class MilTime {
     private:
-        int hour;           // hours of time (military time)
-        int minutes;        // minutes of time (military time)
+        int hour;       // hours of time (military time)
+        int minutes;    // minutes of time (military time)
 
     public:
         // Member functions
@@ -41,7 +41,7 @@ class MilTime {
 
         void write_out(ofstream &fout) const;
 
-        MilTime();    // default constructor
+        MilTime();      // default constructor
 };
 
 /**
@@ -49,7 +49,7 @@ class MilTime {
  * 
  */
 MilTime::MilTime() {
-    hour = 0;
+    hour    = 0;
     minutes = 0;
 }
 
@@ -59,8 +59,8 @@ MilTime::MilTime() {
  */
 class Fahrenheit {
     private:
-        double degree;          // temperature in degrees (Fahrenheit)
-        MilTime time;           // time of sample in military time
+        double  degree;     // temperature in degrees (Fahrenheit)
+        MilTime time;       // time of sample in military time
 
     public:
         // Member functions
@@ -81,8 +81,8 @@ class Fahrenheit {
  * 
  */
 Fahrenheit::Fahrenheit() {
-    degree = 0;
-    time = MilTime();
+    degree  = 0;
+    time    = MilTime();
 }
 
 /* FUNCTION PROTOTYPES */
@@ -95,9 +95,9 @@ MilTime last_sample(const vector<Fahrenheit> &samples);
 void write_to_file(const string fileName, const vector<Fahrenheit> &samples);
 
 int main() {
-    string fname;                   // Output file name
-    int n;                          // Number of temperature samples
-    vector<Fahrenheit> temps;       // Temperature samples
+    string              fname;      // Output file name
+    int                 n;          // Number of temperature samples
+    vector<Fahrenheit>  temps;      // Temperature samples
 
     /* Prompt for the name of the output file to write */
     fname = read_filename("Enter the output file name: ");
@@ -152,9 +152,9 @@ int read_num_samples(const string prompt) {
  * @return The temperature sample (degree and time) object. 
  */
 Fahrenheit read_sample(const int k) {
-    double temp;
-    int hour, min;
-    Fahrenheit sample;
+    double      temp;
+    int         hour, min;
+    Fahrenheit  sample;
 
     /* Prompt and read in temperature sample characteristics */
     cout << "SAMPLE #" << k << endl;

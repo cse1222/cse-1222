@@ -66,6 +66,11 @@ int main() {
  * @param numNonNeg The number of non-negative elements in teh array
  */
 void count(const int array[], const int size, int &numNeg, int &numNonNeg) {
+    /* Initialize counts to 0 */
+    numNeg      = 0;
+    numNonNeg   = 0;
+
+    /* Count number of negative vs non-negative elements */
     for (int i = 0; i < size; i++) {
         /* Checks whether element is negative or non-negative */
         if (array[i] < 0) {
@@ -91,8 +96,8 @@ void count(const int array[], const int size, int &numNeg, int &numNonNeg) {
  * @param sizeNonNeg The number of elements in the non-negative list
  */
 void split(const int list[], const int size, int listNeg[], const int sizeNeg, int listNonNeg[], const int sizeNonNeg) {
-    int numNeg = 0;         // number of negative elements copied
-    int numNonNeg = 0;      // number of non-negative elements copied
+    int numNeg      = 0;    // number of negative elements copied
+    int numNonNeg   = 0;    // number of non-negative elements copied
 
     /* Split original list into negative and non-negative elements */
     for (int i = 0; i < size; i++) {
