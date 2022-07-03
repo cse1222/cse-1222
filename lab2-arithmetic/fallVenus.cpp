@@ -15,7 +15,7 @@
 using namespace std;
 
 int main() {
-    double g = 8.73;        // Acceleration due to gravity in m/s^2
+    const double g = 8.73;  // Acceleration due to gravity in m/s^2
     double t;               // Time in seconds
     double velocity;        // Velocity on Venus in m/s
     double distance;        // Falling distance on Venus in m/s^2
