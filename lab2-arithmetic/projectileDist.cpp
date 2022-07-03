@@ -16,9 +16,9 @@
 using namespace std;
 
 int main() {
-    const double g = 9.81;  // Acceleration due to gravity in m/s^2
-    double v;               // Initial velocity in m/s
-    double distance;        // Horizontal distance traveled in meters
+    double          v;          // Initial velocity in m/s
+    double          distance;   // Horizontal distance traveled in meters
+    const double    g = 9.81;   // Acceleration due to gravity in m/s^2
 
     /* Prompt and read in initial projectile velocity */
     cout << "Enter the initial velocity (meter/second): ", cin >> v;

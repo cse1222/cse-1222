@@ -14,9 +14,9 @@
 using namespace std;
 
 int main() {
-    double d;
-    int i1, i2;
-    char c;
+    double  d;
+    int     i1, i2;
+    char    c;
 
     /* Prompt and read in char, double, and int values */
     cout << "Enter a character: ", cin >> c;
