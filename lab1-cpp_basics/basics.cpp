@@ -41,7 +41,7 @@ int main() {
 
     /* Compute and print results of second set of math formulas */
     cout << "The reciprocal of the first integer is " << (1.0 / i1) << endl;
-    cout << "(double)/(second integer) is " << (i1 / i2) << endl;
+    cout << "(first integer)/(second integer) is " << (i1 / i2) << endl;
     cout << "first integer modulus second integer is " << (i1 % i2) << endl;
 
     return (0);
