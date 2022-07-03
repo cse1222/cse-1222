@@ -19,10 +19,10 @@
 using namespace std;
 
 int main() {
-    int n;              // Number of integers in last row
-    double midPoint;    // Value of alternating harmonic series from k=1 to k=n
+    int     n;          // Number of integers in last row
+    double  midPoint;   // Value of alternating harmonic series from k=1 to k=n
 
-    /* Promts, reads in, and validate 'n' */
+    /* Promts, reads in, and validates 'n' */
     cout << "Enter a positive odd number: ", cin >> n;
     while (n < 0 || n % 2 == 0) {
         cout << "Enter a positive odd number. Try again: ", cin >> n;

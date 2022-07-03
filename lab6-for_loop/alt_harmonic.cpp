@@ -15,8 +15,8 @@
 using namespace std;
 
 int main() {
-    int n;              // Number of terms to look at in sereies
-    double sum(0);      // Value of alternating harmonic series from k=1 to k=n
+    int     n;          // Number of terms to look at in sereies
+    double  sum(0);     // Value of alternating harmonic series from k=1 to k=n
 
     /* Promts, reads in, and validates n (the number of terms) */
     cout << "Enter n: ", cin >> n;
