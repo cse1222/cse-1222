@@ -32,13 +32,13 @@ void display_characters(const vector<char> &characters, const int colwidth);
 void display_freqs(const vector<int> &freqs, const int colwidth);
 
 int main() {
-    const int COLUMNWIDTH = 2;      // width of fields for displaying formatted results
+    const int       COLUMNWIDTH = 2;    // width of fields for displaying formatted results
     
-    vector<char> vowels;            // vector holding the six vowels in lower case
-    vector<int> freqs;              // vector holding the counts  of each vowel eencountered in the text
-    string input;                   // holds the original input text typed by the user
-    vector<char> text;              // vector holding the alphabetic characters only of the input text
-    int numConsonants = 0;          // number of consonant characters found in the input text
+    vector<char>    vowels;             // vector holding the six vowels in lower case
+    vector<int>     freqs;              // vector holding the counts  of each vowel eencountered in the text
+    string          input;              // holds the original input text typed by the user
+    vector<char>    text;               // vector holding the alphabetic characters only of the input text
+    int             numConsonants = 0;  // number of consonant characters found in the input text
 
     /* Initialize the list of vowels and vowel frequencies */
     init_vectors(vowels, freqs);
@@ -68,8 +68,8 @@ int main() {
  */
 void init_vectors(vector<char> &vowels, vector<int> &frequencies) {
     /* Get array of vowels to initialize vector */
-    const int SIZE = 6;
-    int letters[SIZE] = {'a', 'e', 'i', 'o', 'u', 'y'};
+    const int   SIZE            = 6;
+    int         letters[SIZE]   = {'a', 'e', 'i', 'o', 'u', 'y'};
 
     /* Initialize vectors of vowels and their starting frequencies */
     for (int i = 0; i < SIZE; i++) {
@@ -103,8 +103,8 @@ string read_text(const string &prompt) {
  */
 bool is_alphabetic(const char character) {
     /* Define the ASCII ranges for alphabetic characters */
-    const int LOWER_MIN = (int)'a', LOWER_MAX = (int)'z';
-    const int UPPER_MIN = (int)'A', UPPER_MAX = (int)'Z';
+    const int   LOWER_MIN = (int)'a', LOWER_MAX = (int)'z';
+    const int   UPPER_MIN = (int)'A', UPPER_MAX = (int)'Z';
 
     /* Check if character is alphabetic (lower case) */
     if (LOWER_MIN <= character && character <= LOWER_MAX) {
