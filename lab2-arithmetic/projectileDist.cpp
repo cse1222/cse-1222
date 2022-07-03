@@ -16,7 +16,7 @@
 using namespace std;
 
 int main() {
-    double g = 9.81;        // Acceleration due to gravity in m/s^2
+    const double g = 9.81;  // Acceleration due to gravity in m/s^2
     double v;               // Initial velocity in m/s
     double distance;        // Horizontal distance traveled in meters
 
