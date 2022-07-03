@@ -22,12 +22,12 @@ int find_max(const int array[], const int size);
 void array_add(const int x, int array[], const int size);
 
 int main() {
-    const int MAX_SIZE = 20;        // max size of array
+    const int MAX_SIZE = 20;    // max size of array
 
-    int array[MAX_SIZE];            // array of non-negative integers
-    int size;                       // number of elements in array
+    int array[MAX_SIZE];        // array of non-negative integers
+    int size;                   // number of elements in array
 
-    /* Prompt anf read in list of non-negative integers */
+    /* Prompt and read in list of non-negative integers */
     read_list(array, size, MAX_SIZE);
     cout << endl;
 
