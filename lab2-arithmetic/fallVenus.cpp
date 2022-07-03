@@ -15,17 +15,17 @@
 using namespace std;
 
 int main() {
-    const double g = 8.73;  // Acceleration due to gravity in m/s^2
-    double t;               // Time in seconds
-    double velocity;        // Velocity on Venus in m/s
-    double distance;        // Falling distance on Venus in m/s^2
+    double          t;          // Time in seconds
+    double          velocity;   // Velocity on Venus in m/s
+    double          distance;   // Falling distance on Venus in m/s^2
+    const double    g = 8.73;   // Acceleration due to gravity in m/s^2
 
-    //* Prompt and read in the elapsed time */
+    /* Prompt and read in the elapsed time */
     cout << "Enter the time: ", cin >> t;
 
     /* Compute projectile velocity and distance traveled */
-    velocity = g * t;
-    distance = 0.5 * velocity * t;
+    velocity    = g * t;
+    distance    = 0.5 * velocity * t;
 
     /* Print projectile velocity and distance traveled */
     cout << "After " << t << " seconds, the velocity on venus is " << velocity << " meters per second." << endl;

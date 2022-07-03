@@ -14,8 +14,8 @@
 using namespace std;
 
 int main() {
-    double x1, y1;      // (x,y) coordinates of the first point
-    double x2, y2;      // (x,y) coordinates of the second point
+    double  x1, y1;     // (x,y) coordinates of the first point
+    double  x2, y2;     // (x,y) coordinates of the second point
 
     /* Prompt and read in coordinates of first and second points */
     cout << "Enter coordinates of the first point (2 values): ", cin >> x1 >> y1;
