@@ -22,14 +22,14 @@
 using namespace std;
 
 int main() {
-    char input;             // Individual character input
-    int count_a(0);         // Keeps track of number of a's
-    int count_g(0);         // Keeps track of number of g's
-    int count_m(0);         // Keeps track of number of m's
-    int count_f(0);         // Keeps track of number of f's
-    int count_k(0);         // Keeps track of number of k's
-    int count_j(0);         // Keeps track of number of j's
-    int totalScore;         // Total score based on points system
+    char    input;          // Individual character input
+    int     totalScore;     // Total score based on points system
+    int     count_a(0);     // Keeps track of number of a's
+    int     count_g(0);     // Keeps track of number of g's
+    int     count_m(0);     // Keeps track of number of m's
+    int     count_f(0);     // Keeps track of number of f's
+    int     count_k(0);     // Keeps track of number of k's
+    int     count_j(0);     // Keeps track of number of j's
 
     /* Prompt for text from user */
     cout << "Enter text:" << endl;
