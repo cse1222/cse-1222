@@ -17,15 +17,14 @@
 using namespace std;
 
 int main() {
-    int initialInvest;      // Initial investment (dollars)
-    int percent;            // Interest rate per year (percentage)
-    int months;             // Number of months compounded
-
-    double finalInvestA;    // Value of investment compounded annually (dollars)
-    double profitA;         // Profit from annual compoundment (dollars)
-    double finalInvestC;    // Value of investment compounded continuously (dollars)
-    double profitC;         // Profit from continuous compoundment (dollars)
-    double investDiff;      // Difference in annual vs continuous compoundment (dollars)
+    int     initialInvest;  // Initial investment (dollars)
+    int     percent;        // Interest rate per year (percentage)
+    int     months;         // Number of months compounded
+    double  finalInvestA;   // Value of investment compounded annually (dollars)
+    double  profitA;        // Profit from annual compoundment (dollars)
+    double  finalInvestC;   // Value of investment compounded continuously (dollars)
+    double  profitC;        // Profit from continuous compoundment (dollars)
+    double  investDiff;     // Difference in annual vs continuous compoundment (dollars)
 
     /* Prompt and read in initial investment, interest rate (percent), and number of months */
     cout << "Enter initial investment (dollars): ", cin >> initialInvest;
@@ -34,19 +33,19 @@ int main() {
     cout << endl;
 
     /* Calculate years compounded and yearly interest rate for use in calculations */
-    double r = percent / 100.0;     // Interest rate per year
-    double y = months / 12.0;       // Number of years compounded
+    double r    = percent / 100.0;  // Interest rate per year
+    double y    = months / 12.0;    // Number of years compounded
 
     /* Compute and print final value of investment compounded annually and the profit */
-    finalInvestA = initialInvest * pow(1+r, y);
-    profitA = finalInvestA - initialInvest;
+    finalInvestA    = initialInvest * pow(1+r, y);
+    profitA         = finalInvestA - initialInvest;
     cout << "Value of your investment compounded annually after " << y << " year(s) is " << finalInvestA << " dollars." << endl;
     cout << "Profit from your investment after " << y << " year(s) is " << profitA << " dollars." << endl;
     cout << endl;
 
     /* Compute and print final value of investment compounded annually and the profit */
-    finalInvestC = initialInvest * exp(r*y);
-    profitC = finalInvestC - initialInvest;
+    finalInvestC    = initialInvest * exp(r*y);
+    profitC         = finalInvestC - initialInvest;
     cout << "Value of your investment compounded continuously after " << y << " year(s) is " << finalInvestC << " dollars." << endl;
     cout << "Profit from your investment after " << y << " year(s) is " << profitC << " dollars." << endl;
     cout << endl;
